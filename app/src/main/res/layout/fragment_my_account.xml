@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_account_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/title_box"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/heading"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_box"
+            android:orientation="vertical">
+
+            <!--first section  start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_130sdp"
+                    android:minWidth="@dimen/_130sdp"
+                    android:background="@drawable/camera_ellipse"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/attach_documents"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gallery"
+                        android:minHeight="@dimen/_35sdp"
+                        android:minWidth="@dimen/_45sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attach"
+                        android:id="@+id/myaccount_camera_txt_view1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Document"
+                        android:id="@+id/myaccount_camera_txt_view2"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--first section  end-->
+
+
+
+            <!--second section  start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgroundline"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/first_horizontal_box"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/first_box_my_documents"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_30sdp"
+                                android:minHeight="@dimen/_40sdp"
+
+                                android:id="@+id/img_my_documents"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="My Documents"
+                                android:id="@+id/myaccount_my_documents"
+                                android:textColor="#2267a4"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/second_box_my_meetings"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_30sdp"
+                                android:minHeight="@dimen/_40sdp"
+
+                                android:id="@+id/img_my_meetings"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="My Meetings"
+                                android:id="@+id/myaccount_my_meetings"
+                                android:textColor="#2267a4"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/second_horizontal_box"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/third_box_account_settings"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_30sdp"
+                                android:minHeight="@dimen/_40sdp"
+
+                                android:id="@+id/img_account_settings"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Account Settings"
+                                android:textColor="#2267a4"
+                                android:id="@+id/myaccount_account_settings"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/fourth_box_my_lawyer"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="@dimen/_30sdp"
+                                android:minHeight="@dimen/_40sdp"
+
+                                android:id="@+id/img_my_lawyer"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lawyers"
+                                android:id="@+id/myaccount_my_lawyer"
+                                android:textColor="#2267a4"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--second section  end-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

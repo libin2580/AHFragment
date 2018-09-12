@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:singleLine="true"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:textSize="@dimen/_12sdp"
+    android:fontFamily="sans-serif"
+    android:ellipsize="marquee"
+    />

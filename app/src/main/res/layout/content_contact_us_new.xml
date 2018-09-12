@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactus_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="alhamdi.com.cybraum.meridianuae.app.alhameedifragment.HomeMainActivityNew"
+    android:background="@drawable/signin_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/title_box"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:id="@+id/heading"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:background="#68ffffff"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+            <!--first section start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_60sdp"
+
+                    android:background="@drawable/logo"
+                    >
+
+
+
+                </ImageView>
+
+            </LinearLayout>
+            <!--first section end-->
+
+
+
+            <!--second section start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:background="#3dffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contact_us_address"
+                        android:padding="@dimen/_5sdp"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="Address"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#000000"
+                        />
+</ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3">
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--second section end-->
+
+
+            <!--third section start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:orientation="horizontal"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp">
+
+
+
+
+<!--bottom first box start-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/contactus_call_box">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutTop"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutBottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/layoutTop"
+                            android:gravity="center|top"
+                            >
+                            <RelativeLayout
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/blue_box"
+                                android:gravity="center|bottom">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="+91 7878787878"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="#ffffff"
+                                    android:id="@+id/contact_us_phone"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="@dimen/_5sdp"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/overlapImage"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_above="@id/layoutBottom"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="-25dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/phone" />
+
+
+                    </RelativeLayout>
+
+
+                    </LinearLayout>
+
+<!--bottom first box end-->
+
+
+
+
+<!--bottom second box start-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/contactus_email_box">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutTop2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutBottom2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/layoutTop2"
+                            android:gravity="center|top"
+                            >
+                            <RelativeLayout
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/blue_box"
+                                android:gravity="center|bottom">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="info@alhammadilaw.com"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="#ffffff"
+                                    android:id="@+id/contact_us_email"
+                                    android:layout_marginBottom="@dimen/_5sdp"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/overlapImage2"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_above="@id/layoutBottom2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="-25dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/email" />
+
+
+                    </RelativeLayout>
+                    </LinearLayout>
+
+<!--bottom second box end-->
+
+
+
+            </LinearLayout>
+            <!--third section end-->
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

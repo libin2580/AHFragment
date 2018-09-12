@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_270sdp"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_5sdp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".4">
+
+<!--horozontal first box start-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/_60sdp"
+                android:minHeight="@dimen/_60sdp"
+                android:id="@+id/lawyer_image"
+                android:layout_centerInParent="true"
+             />
+            <ProgressBar
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerInParent="true"
+                android:id="@+id/gallery_progressbar"
+                android:indeterminateTint="@color/popup_progressbar_color"
+                />
+
+        </RelativeLayout>
+
+    <!--horozontal first box end-->
+
+
+    <!--horozontal second box start-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".75"
+        android:orientation="vertical">
+
+
+
+        <!--horozontal second box - first vertical box start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lawyer_name"
+                android:text="lawyer_name"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lawyer_department"
+                android:text="lawyer_department"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp"/>
+
+
+        </LinearLayout>
+        <!--horozontal second box - first vertical box end-->
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!--horozontal second box end-->
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".25"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lawyer_email_text"
+                android:text="Email "
+                android:textColor="#000000"
+
+                android:textSize="@dimen/_11sdp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text=" :"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_11sdp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lawyer_email"
+                android:textColor="#000000"
+                android:text="lawyer_email"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_11sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lawyer_phone_text"
+                android:text="Phone "
+
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text=" :"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_11sdp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7">
+
+            <TextView
+                android:id="@+id/lawyer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="lawyer_phone"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/childScroll"
+    android:requiresFadingEdge="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Description : "
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp"/>
+
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lawyer_address"
+                android:text="lawyer_address"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_2sdp"/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <at.blogc.android.views.ExpandableTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lawyer_address"
+                android:id="@+id/lawyer_address"
+                android:maxLines="3"
+                android:textSize="@dimen/_11sdp"
+                android:ellipsize="end"
+                animation_duration="1000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="view more"
+                    android:id="@+id/lawyer_view_more"
+                    android:textColor="@color/pressed"
+                    android:textSize="@dimen/_11sdp"/>
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Cases handling : "
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp"/>
+
+            <TextView
+                android:id="@+id/lawyer_cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lawyer_cases"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+</ScrollView>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_box"
+    android:padding="@dimen/_10sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:id="@+id/make_appointment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make an Appointment"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/cases_sent_btn_txt_view"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linenew"></LinearLayout>
+</LinearLayout>
+

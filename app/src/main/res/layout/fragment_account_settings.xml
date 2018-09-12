@@ -1,0 +1,415 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/title_box"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_box">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/account_content_layout"
+                android:visibility="gone"
+                >
+
+                <!--firat section start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/dummy_profile_pic_male1"
+                        android:id="@+id/account_settings_profile_image"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/account_settings_name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Name"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp"/>
+                </LinearLayout>
+                <!--first section end-->
+                <!--second section start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            >
+                            <!--first box start-->
+<!--                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/item_box"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:id="@+id/account_settings_first_box"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center|right"
+                                    android:gravity="center|right">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minWidth="@dimen/_15sdp"
+                                        android:minHeight="@dimen/_15sdp"
+                                        android:background="@drawable/myservice_plan"
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="My Service Plan"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:layout_marginBottom="@dimen/_15sdp"
+                                        android:textColor="#000000"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minWidth="@dimen/_4sdp"
+                                        android:minHeight="@dimen/_6sdp"
+                                        android:background="@drawable/next"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>-->
+
+                            <!--first box end-->
+
+                            <!--third box start-->
+
+                           <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/item_box"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:id="@+id/account_settings_third_box"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center|right"
+                                    android:gravity="center|right">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minWidth="@dimen/_15sdp"
+                                        android:minHeight="@dimen/_15sdp"
+                                        android:background="@drawable/password"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Change Password"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:layout_marginBottom="@dimen/_15sdp"
+                                        android:textColor="#000000"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/next"
+                                        android:minWidth="@dimen/_4sdp"
+                                        android:minHeight="@dimen/_6sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>-->
+                            <!--third box end-->
+                            <!--second box start-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/item_box"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:id="@+id/account_settings_second_box"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center|right"
+                                    android:gravity="center|right">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minWidth="@dimen/_15sdp"
+                                        android:minHeight="@dimen/_15sdp"
+                                        android:background="@drawable/password"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Create Document Password"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:layout_marginBottom="@dimen/_15sdp"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="#000000"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/next"
+                                        android:minWidth="@dimen/_4sdp"
+                                        android:minHeight="@dimen/_6sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--second box end-->
+                            <!--second box start-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/item_box"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:id="@+id/account_settings_fifth_box"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center|right"
+                                    android:gravity="center|right">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minWidth="@dimen/_15sdp"
+                                        android:minHeight="@dimen/_15sdp"
+                                        android:background="@drawable/password"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Change Document Password"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:layout_marginBottom="@dimen/_15sdp"
+                                        android:fontFamily="sans-serif"
+                                        android:textColor="#000000"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/next"
+                                        android:minWidth="@dimen/_4sdp"
+                                        android:minHeight="@dimen/_6sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--second box end-->
+                            <!--fourth box start-->
+                          <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/item_box"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:id="@+id/account_settings_fourth_box"
+                              android:visibility="gone"
+                                >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center|right"
+                                    android:gravity="center|right">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minWidth="@dimen/_15sdp"
+                                        android:minHeight="@dimen/_15sdp"
+                                        android:background="@drawable/faq"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="FAQ"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:layout_marginBottom="@dimen/_15sdp"
+                                        android:textColor="#000000"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/next"
+                                        android:minWidth="@dimen/_4sdp"
+                                        android:minHeight="@dimen/_6sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--fourth box end-->
+                        </LinearLayout>
+
+
+
+
+
+                    </ScrollView>
+
+
+
+                </LinearLayout>
+
+                <!--second section end-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

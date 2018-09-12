@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/title_box"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attach Documents"
+                android:textColor="#ffffff"
+                android:id="@+id/heading"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:background="@drawable/rounded_box"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".2"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp"
+        android:hint="Enter Document Title"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@drawable/bottomline"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:id="@+id/document_title"
+        android:textSize="14sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/buttonChoose">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_folder_open_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse"
+                android:paddingLeft="@dimen/_5sdp"
+                />
+
+    </LinearLayout>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonChoose"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Browse Documents"
+        android:capitalize="none"
+        android:background="#ab1c74e7"
+        android:textColor="#ffffff"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />-->
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".7"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please add Documents"
+    android:textColor="#d4242f"
+    android:id="@+id/document_error_txt"
+    android:visibility="gone"/>
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/recyclerViewgallery"
+
+                                    android:requiresFadingEdge="vertical"
+
+                                    >
+
+                                </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".1"
+   android:orientation="horizontal"
+    android:background="#71000000"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:id="@+id/add_extra_doc"
+    android:visibility="gone"
+
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/add"
+    android:minHeight="@dimen/_12sdp"
+    android:minWidth="@dimen/_12sdp"
+
+    />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <!--_________________________sent row start_________________________________________-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:background="@drawable/bottom_box"
+            android:id="@+id/buttonUpload"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="-5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD"
+                android:id="@+id/cases_sent_btn_txt_view"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        <!--_________________________sent row end_________________________________________-->
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

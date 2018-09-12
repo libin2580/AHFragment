@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Al Hammadi</string>
+    <string name="title_activity_home_main">HomeMainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_gggggggg">gggggggg</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="about_us">Out of ideas for having fun? Check out great ideas with our local experts. Get help with figuring out plans for tonight, last – minute date ideas and everything else fun.
+
+Our experts will sort out things so that you can be free to have unlimited fun!
+Chat with us and get going! </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_share_documents_activity">share_documents_activity</string>
+</resources>

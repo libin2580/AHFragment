@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:orientation="horizontal"
+    android:background="@drawable/item_box"
+    >
+    <!--first box start-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".8"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/my_document_box"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:layout_gravity="center|right"
+            android:gravity="center|right">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/_15sdp"
+                android:minHeight="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/my_document_image"
+                android:background="@drawable/my_document"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textColor="#000000"
+                android:id="@+id/my_documents_heading"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:lines="1"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/doc_id"
+                android:visibility="gone"
+                android:textSize="@dimen/_13sdp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!--first box end-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/delete_Document">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/_4sdp"
+            android:minHeight="@dimen/_6sdp"
+            android:backgroundTint="#b7c10606"
+            android:background="@drawable/ic_delete_black_24dp"/>
+    </LinearLayout>
+</LinearLayout>

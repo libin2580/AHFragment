@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/title_box"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Document Password"
+                android:textColor="#ffffff"
+                android:id="@+id/heading"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+
+
+        <!--rounded box start-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_box"
+
+            android:orientation="vertical">
+            <!--_________________________adding box start_________________________________________-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                >
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <!--second box start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_gravity="center"
+
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_marginRight="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_5sdp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="@dimen/_10sdp"
+                            android:hint=" Enter Password"
+                            android:singleLine="true"
+android:fontFamily="sans-serif"
+                            android:background="@drawable/namebox"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/document_password"
+                            android:textSize="14sp"
+                            android:inputType="textPassword"
+                            />
+                            </LinearLayout>
+                    </LinearLayout>
+                    <!--second box end-->
+
+
+                    <!--third box start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_marginRight="@dimen/_30sdp"
+                          >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="@dimen/_10sdp"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:fontFamily="sans-serif"
+                            android:background="@drawable/namebox"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/confirm_document_password"
+                            android:textSize="14sp"
+                            />
+</LinearLayout>
+                    </LinearLayout>
+
+                    <!--third box end-->
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!--_________________________adding box send_________________________________________-->
+
+            <!--_________________________sent row start_________________________________________-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:background="@drawable/bottom_box"
+                android:id="@+id/document_password_submit_button"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/change_password_btn_txt_view"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+            <!--_________________________sent row end_________________________________________-->
+
+
+        </LinearLayout>
+        <!--rounded box end-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

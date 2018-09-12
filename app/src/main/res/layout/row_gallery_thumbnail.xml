@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/_5sdp">
+<alhamdi.com.cybraum.meridianuae.app.alhameedifragment.helper.SquareLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/thumbnail"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_margin="@dimen/_5sdp"/>
+
+
+    </alhamdi.com.cybraum.meridianuae.app.alhameedifragment.helper.SquareLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|right"
+
+android:orientation="vertical"
+        >
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/ic_close_white_24dp"
+        android:id="@+id/image_close"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/gallery_progressbar"
+        android:indeterminateTint="@color/popup_progressbar_color"
+        />
+
+</RelativeLayout>

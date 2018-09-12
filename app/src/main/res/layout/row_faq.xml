@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:minHeight="@dimen/_160sdp"
+
+    android:orientation="vertical">
+
+<!--question  box start-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".3"
+    android:weightSum=".81">
+
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight=".1"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".01"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/line"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:layout_gravity="center|left"
+        android:gravity="center|left"
+        android:layout_marginLeft="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fqa_id_no"
+            android:visibility="gone">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/faq_question"
+            android:text="Question"
+            android:fontFamily="sans-serif"
+            android:textSize="17sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--question  box end-->
+
+    <!--answer  box start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:background="@drawable/answer_box"
+            android:padding="@dimen/_10sdp"
+
+          >
+            <ScrollView
+                android:id="@+id/childScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:requiresFadingEdge="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/faq_answer"
+                android:text="Answer"
+                android:fontFamily="sans-serif"
+                android:paddingRight="@dimen/_6sdp"
+                android:textColor="#282626"
+                android:textSize="14sp"
+                >
+
+
+            </TextView>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--answer  box end-->
+
+
+</LinearLayout>

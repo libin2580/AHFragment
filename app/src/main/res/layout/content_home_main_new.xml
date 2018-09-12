@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="alhamdi.com.cybraum.meridianuae.app.alhameedifragment.HomeMainActivityNew"
+>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:id="@+id/section_1"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:background="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_30sdp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:orientation="vertical"
+        android:id="@+id/section_2"
+        android:layout_marginBottom="10dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".9"
+                android:orientation="vertical"
+                android:id="@+id/square_boxes_layout">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/square_boxes_layout_horizontal_section_1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/square_boxes_layout_horizontal_section_1_box_1"
+                        android:orientation="vertical"
+                        android:background="@drawable/homebox"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".7"
+                            android:id="@+id/square_boxes_layout_horizontal_section_1_box_1_image_1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:minWidth="@dimen/_30sdp"
+
+                                android:id="@+id/asklawyer_image"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3"
+                            android:orientation="vertical"
+                            android:id="@+id/square_boxes_layout_horizontal_section_1_box_1_label_1"
+                            android:gravity="center|top"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ASK A LAWYER"
+                                android:textColor="#000000"
+                                android:id="@+id/box1_txt_view" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/square_boxes_layout_horizontal_section_1_box_2"
+                        android:orientation="vertical"
+                        android:background="@drawable/homebox">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".7"
+                            android:id="@+id/square_boxes_layout_horizontal_section_1_box_2_image_2"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:minWidth="@dimen/_30sdp"
+
+                                android:id="@+id/services_image"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3"
+                            android:orientation="vertical"
+                            android:id="@+id/square_boxes_layout_horizontal_section_1_box_2_label_2"
+                            android:gravity="center|top"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SERVICES"
+                                android:textColor="#000000"
+                                android:id="@+id/box2_txt_view" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/square_boxes_layout_horizontal_section_2"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="@dimen/_10sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/square_boxes_layout_horizontal_section_2_box_1"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/homebox"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".7"
+                            android:id="@+id/square_boxes_layout_horizontal_section_2_box_1_image_3"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:minWidth="@dimen/_30sdp"
+
+                                android:id="@+id/appointment_image"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3"
+                            android:orientation="vertical"
+                            android:id="@+id/square_boxes_layout_horizontal_section_2_box_1_label_3"
+                            android:gravity="center|top"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="APPOINTMENTS"
+                                android:textColor="#000000"
+                                android:id="@+id/box3_txt_view" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/square_boxes_layout_horizontal_section_2_box_2"
+                        android:orientation="vertical"
+                        android:background="@drawable/homebox">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".7"
+                            android:id="@+id/square_boxes_layout_horizontal_section_2_box_2_image_4"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:minWidth="@dimen/_30sdp"
+
+                                android:id="@+id/my_account_image"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3"
+                            android:orientation="vertical"
+                            android:id="@+id/square_boxes_layout_horizontal_section_2_box_2_label_4"
+                            android:gravity="center|top"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MY ACCOUNT"
+                                android:textColor="#000000"
+                                android:id="@+id/box4_txt_view" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:orientation="horizontal"
+                android:id="@+id/footer_contact_layout"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/callus_box"
+                    android:id="@+id/footer_contact_layout_box_1"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".4"
+                        android:layout_height="match_parent"
+                        android:id="@+id/footer_contact_layout_box_1_image_1"
+                        android:orientation="horizontal"
+                        android:gravity="center|right"
+                        android:paddingRight="5dp"
+                        >
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:minHeight="@dimen/_20sdp"
+                            android:minWidth="@dimen/_20sdp"
+                            android:background="@drawable/callus"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:id="@+id/footer_contact_layout_box_1_label_1"
+                        android:orientation="horizontal"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_5sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CALL US"
+                            android:textColor="#ffffff"
+                            android:id="@+id/call_us_view" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/enquirybox"
+                    android:id="@+id/footer_contact_layout_box_2"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".4"
+                        android:layout_height="match_parent"
+                        android:id="@+id/footer_contact_layout_box_2_image_1"
+                        android:orientation="horizontal"
+                        android:gravity="center|right"
+                        android:paddingRight="@dimen/_5sdp"
+                        >
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:minHeight="@dimen/_20sdp"
+                            android:minWidth="@dimen/_20sdp"
+                            android:background="@drawable/enquiry"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:id="@+id/footer_contact_layout_box_2_label_1"
+                        android:orientation="horizontal"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_5sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ENQUIRY"
+                            android:textColor="#ffffff"
+                            android:id="@+id/enquiry_txt_view" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

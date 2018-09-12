@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout1"
+    android:background="#56000000"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="top|right"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_close_white_24dp"
+                android:id="@+id/slideshow_close"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <uk.co.senab.photoview.PhotoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_preview"
+            android:layout_centerInParent="true"
+            android:scaleType="center"/>
+
+    </LinearLayout>
+
+<!--<alhamdi.com.cybraum.meridianuae.app.alhameedifragment.gallery.TouchImageView
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/_300sdp"
+   android:layout_marginTop="@dimen/_50sdp"
+    android:id="@+id/image_preview"
+    android:layout_centerInParent="true"
+    android:scaleType="fitCenter"/>-->
+
+</LinearLayout>

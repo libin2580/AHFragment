@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="alhamdi.com.cybraum.meridianuae.app.alhameedifragment.HomeMainActivityNew">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="alhamdi.com.cybraum.meridianuae.app.alhameedifragment.HomeMainActivityNew"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+
+
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/ic_dehaze_white_24dp"
+                    android:layout_gravity="center"
+
+                    android:id="@+id/nav_open"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".12"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="center|end"
+                    android:id="@+id/user_icon"
+                    android:layout_alignParentRight="true"
+                    />
+               <!-- (inside above imageview) android:background="@drawable/user"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/prev_icon2"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="@dimen/_6sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:background="@drawable/previous"
+                        android:gravity="center"
+
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        android:layout_gravity="center|end"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/prev_icon_nav"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="@dimen/_6sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:background="@drawable/previous"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        android:layout_gravity="center|end"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:id="@+id/frame"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/progress_loader_layout_color"
+        android:id="@+id/progress_loader_layout"
+        android:visibility="gone"
+        android:gravity="center"
+        android:clickable="true"
+
+
+        >
+    <include layout="@layout/progressloader"/>
+
+    </LinearLayout>
+</RelativeLayout>
